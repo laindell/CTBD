@@ -1,0 +1,7 @@
+services:
+  hello-web:
+    image: nginxdemos/hello
+    container_name: hello-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
